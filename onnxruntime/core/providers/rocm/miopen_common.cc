@@ -84,9 +84,11 @@ const float Consts<float>::Zero = 0;
 template <>
 const double Consts<double>::Zero = 0;
 
-const float Consts<half>::Zero = 0;
+template <>
+const half Consts<half>::Zero = half(0.0f);
 
-const float Consts<half>::One = 1;
+template <>
+const half Consts<half>::One = half(1.0f);
 
 }  // namespace rocm
 }  // namespace onnxruntime

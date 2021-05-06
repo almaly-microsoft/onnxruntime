@@ -38,11 +38,5 @@ struct Consts {
   static const ElemType One;
 };
 
-template <>
-struct Consts<half> {
-  static const float Zero;
-  static const float One;
-};
-
 }  // namespace rocm
 }  // namespace onnxruntime
