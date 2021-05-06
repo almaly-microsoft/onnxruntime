@@ -1,4 +1,3 @@
-# default to latest supported policy, x86_64
 ARG BASEIMAGE=nvcr.io/nvidia/cuda:11.0-cudnn8-devel-centos7
 ARG POLICY=manylinux2014
 ARG PLATFORM=x86_64
